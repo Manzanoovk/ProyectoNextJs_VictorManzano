@@ -3,9 +3,9 @@ import Image from 'next/image'
 import styles from './Productos.module.css'
 
 const productos = [
-  { id: 1, nombre: 'Vaper X100', precio: '84.50€', imagen: '/imagenes/vaper1.jpg' },
-  { id: 2, nombre: 'Vaper Pro 200', precio: '65.99€', imagen: '/imagenes/vaper2.jpg' },
-  { id: 3, nombre: 'Vaper Ultra', precio: '99.99€', imagen: '/imagenes/vaper3.jpg' },
+  { id: 1, nombre: 'Vaporesso Luxe Max', precio: '84.50€', imagen: '/imagenes/vaper1.jpg' },
+  { id: 2, nombre: 'Vaper Smok Pro 200', precio: '65.99€', imagen: '/imagenes/vaper2.jpg' },
+  { id: 3, nombre: 'Vaporesso Revenger X', precio: '99.99€', imagen: '/imagenes/vaper3.jpg' },
 ]
 
 export default function Productos() {
