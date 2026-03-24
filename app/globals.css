@@ -1,26 +1,103 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Fondo general */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #e0f2fe, #f8fafc);
+  color: #1e293b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Links navbar */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Link activo (el que ya tienes con className) */
+nav a.active {
+  background-color: white;
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+/* Texto */
+p {
+  color: #475569;
+}
+
+/* Grid productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+/* Botón */
+button {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
 }

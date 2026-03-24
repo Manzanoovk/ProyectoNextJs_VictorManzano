@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0070f3;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #cce4ff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}
